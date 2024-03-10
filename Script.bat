@@ -6,4 +6,4 @@ docker build -t strapi-backend opsci-strapi-backend
 docker run -d --name strapi-conteneur-backend --network strapi-network -e PORT=1337 -p 1337:1337 strapi-backend
 
 docker build -t strapi-frontend opsci-strapi-frontend
-docker run --name strapi-frontend --network strapi-network -p 5173:5173 strapi-frontend
+docker run --name strapi-conteneur-frontend --network strapi-network -p 5173:5173 strapi-frontend
